@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todoForm {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.todoText {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-right: 1px rgba(255, 255, 255, 0.664) solid;
+  cursor: pointer;
+  flex: 1;
+}
+.propBefore {
+  position: absolute;
+  background-color: #f73378;
+  width: 200px;
+  height: 200px;
+  margin: -15px 0px 0px -15px;
+  z-index: -1;
+}
+.propAfter {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 200px;
+  margin-top: -185px;
+  margin-left: 615px;
+  z-index: -1;
+}
