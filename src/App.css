@@ -39,6 +39,9 @@ body {
   margin-left: 615px;
   z-index: -1;
 }
+.todoHolder {
+  width: 100%;
+}
 .select {
   margin-top: -125px;
   margin-left: 150px;
@@ -50,7 +53,14 @@ body {
   padding-left: 20px;
   background-color: rgb(47, 47, 47);
   border: solid rgba(255, 255, 255, 0.753) 2px;
+  outline: none;
 }
-.todoHolder {
-  width: 100%;
+.selectBorder {
+  margin-top: -115px;
+  margin-left: 310px;
+  font-size: 25px;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background-color: #f73378;
 }

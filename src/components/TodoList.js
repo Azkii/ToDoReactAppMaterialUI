@@ -43,6 +43,7 @@ function TodoList() {
     }
     return (
         <div>
+            <div className="selectBorder"></div>
             <select className="select" defaultValue="All" onChange={(e) => sortData(e.target)}>
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
