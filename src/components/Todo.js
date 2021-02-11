@@ -44,14 +44,16 @@ function Todo({todos,completeTodo,removeTodo}) {
     return (
         todos.map((todo,index) => {
             return (
-                <Paper className={todo.isComplete ? classes.todoItemDone : classes.todoItem} key={index}>
-                    <div className="todoText" key={todo.id} onClick={() => completeTodo(todo.id)}>
-                        {todo.text}
-                    </div>
-                    <IconButton onClick={() => removeTodo(todo.id)} aria-label="delete">
-                        <DeleteIcon className={classes.delete} fontSize="small"/>
-                    </IconButton>
-                </Paper>
+                <div className="todoHolder" name={todo.isComplete ? "completed" : "notCompleted"}>
+                    <Paper className={todo.isComplete ? classes.todoItemDone : classes.todoItem} key={index}>
+                        <div className="todoText" key={todo.id} onClick={() => completeTodo(todo.id)}>
+                            {todo.text}
+                        </div>
+                        <IconButton onClick={() => removeTodo(todo.id)} aria-label="delete">
+                            <DeleteIcon className={classes.delete} fontSize="small"/>
+                        </IconButton>
+                    </Paper>
+                </div>
             )
         })
     )

@@ -15,14 +15,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 function App() {
-  const classes = useStyles();
+    const classes = useStyles();
     return (
       <div>
-        <div className="propBefore"></div>
+        <div className="propBefore" />
         <Paper className={classes.paperBox}>
           <TodoList />
         </Paper>
-        <div className="propAfter"></div>
+        <div className="propAfter" />
       </div>
     )
 }

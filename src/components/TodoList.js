@@ -26,8 +26,27 @@ function TodoList() {
         })
         setTodos(removeArr)
     }
+    const sortData = (e) => {
+      const sortArray = document.querySelectorAll(".todoHolder");
+      sortArray.forEach((element) => {
+          if (e.target.value === "all") {
+              element.style.display = "";
+          }
+          else if(element.getAttribute("name") !== e.target.value) {
+              element.style.display = "none";
+          }
+          else {
+              element.style.display = "";
+          }
+      });
+    }
     return (
         <div>
+            <select className="select" defaultValue="All" onChange={(e) => sortData(e)}>
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="notCompleted">Not Completed</option>
+            </select>
             <TodoForm  onSubmit={AddTodo} />
             <Todo todos={todos} completeTodo={completeTodo} removeTodo = {removeTodo} />
         </div>

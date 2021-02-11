@@ -28,7 +28,7 @@ function TodoForm(props) {
     setInput('');
   };
   return (
-    <form className="todoForm" autocomplete="off" onSubmit={handleSubmit}>
+    <form className="todoForm" autoComplete="off" onSubmit={handleSubmit}>
       <TextField
         type="text"
         label="So what's next ?"
@@ -52,5 +52,4 @@ function TodoForm(props) {
     </form>
   );
 }
-
 export default TodoForm
