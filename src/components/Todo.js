@@ -44,7 +44,7 @@ function Todo({todos,completeTodo,removeTodo}) {
     return (
         todos.map((todo,index) => {
             return (
-                <div className="todoHolder" name={todo.isComplete ? "completed" : "notCompleted"}>
+                <div className="todoHolder" key={index} name={todo.isComplete ? "completed" : "notCompleted"}>
                     <Paper className={todo.isComplete ? classes.todoItemDone : classes.todoItem} key={index}>
                         <div className="todoText" key={todo.id} onClick={() => completeTodo(todo.id)}>
                             {todo.text}

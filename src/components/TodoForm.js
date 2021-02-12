@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
       color: "white",
       outline: "none",
     },
+    color: {
+      color: "linear-gradient(90deg, rgba(180,58,103,1) 0%, rgba(253,29,29,1) 50%, rgba(252,138,69,0.9303155144694534) 100%)",
+    }
   },
 }));
 function TodoForm(props) {

@@ -37,14 +37,13 @@ function TodoList() {
           }
           else {
               element.style.display = "";
-              console.log("xd");
           }
       });
     }
     return (
         <div>
             <div className="selectBorder"></div>
-            <select className="select" defaultValue="All" onChange={(e) => sortData(e.target)}>
+            <select className="select border-gradient border-gradient-purple" defaultValue="All" onChange={(e) => sortData(e.target)}>
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="notCompleted">Not Completed</option>
